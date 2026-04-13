@@ -5,6 +5,9 @@ app.get('/', (req, res) => {
 res.json({ message: 'Hello from CI/CD Lab!', status: 'ok' });
 5
 });
+app.get('/goodbye', (req, res) => {
+  res.json({ message: 'Goodbye! See you next time.' });
+});
 // Route 2: Health check
 app.get('/health', (req, res) => {
 res.json({ status: 'healthy' });
