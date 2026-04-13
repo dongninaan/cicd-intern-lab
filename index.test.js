@@ -13,5 +13,5 @@ expect(response.body.status).toBe('healthy');
 test('GET /add/3/4 returns 7', async () => {
 const response = await request(app).get('/add/3/4');
 expect(response.status).toBe(200);
-expect(response.body.result).toBe(99);
+expect(response.body.result).toBe(7);
 });
